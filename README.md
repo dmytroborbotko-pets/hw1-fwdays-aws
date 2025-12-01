@@ -17,7 +17,7 @@ aws s3 website s3://hw1-html-cli --index-document index.html
 
 # enable public access and set policy
 
-aws s3api put-public-access-bloc /
+aws s3api put-public-access-block /
 --bucket hw1-html-cli
 --public-access-block-configuration "BlockPublicAcls=false,IgnorePublicAcls=false,BlockPublicPolicy=false,RestrictPublicBuckets=false"
 aws s3api put-bucket-policy --bucket hw1-html-cli --policy file://$PATH_TO_POLICY_JSON
